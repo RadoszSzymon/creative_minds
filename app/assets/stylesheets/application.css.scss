@@ -1,0 +1,142 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ *= require font-awesome
+ */
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import "font-awesome";
+
+*{
+  font-family: 'Ubuntu', sans-serif;
+  text-align: center;
+}
+
+.jumbotron{
+  padding:0;
+  margin:0;
+
+  /* BANNER */
+
+  .banner{
+    text-align: center;
+    background-color: #040D17;
+    color: #fff;
+    padding-bottom: 4em;
+
+    .menu{
+      padding: 0 4em;
+    }
+
+    .menu_option{
+      background-color: #091B2E;
+      padding: 0.7em 0;
+
+      h3{
+        font-weight: 300;
+      }
+
+      .icon{
+        font-size: 2em;
+        padding-top: 1em;
+        color: #CDCDCD;
+      }
+    }
+
+    .menu_option:hover{
+      background-color:#102C4A;
+
+      .icon{
+        -webkit-transform:scale(1.15); /* Safari and Chrome */
+        -moz-transform:scale(1.15); /* Firefox */
+        -ms-transform:scale(1.15); /* IE 9 */
+        -o-transform:scale(1.15); /* Opera */
+         transform:scale(1.15);
+      }
+    }
+
+    h1{
+      padding:2em 0;
+      font-weight: 700;
+    }
+
+    h3{
+      font-weight: 300;
+      padding-bottom:0.6em;
+    }
+  }/* END OF BANNER */
+
+  /* ABOUT */
+  .about{
+    text-align: center;
+    padding: 1em;
+    color: #363636;
+
+    h1{
+      font-size:3em;
+      padding: 1em 0;
+      font-weight: 700;
+    }
+
+    h4{
+      text-align: justify;
+      font-weight: 400;
+      padding-bottom: 2.3em;
+    }
+  }/* END OF ABOUT */
+
+  .service{
+    background-color: #040D17;
+    color: #fff;
+    padding-bottom: 3em;
+
+    h1{
+      font-size:3em;
+      padding: 1em 0;
+      font-weight: 700;
+    }
+
+    h3{
+      font-weight: 300;
+      padding-bottom:0.6em;
+      font-size:1.3em;
+    }
+    .service_options{
+      padding: 0 2em;
+
+      .service_icon{
+        font-size: 2em;
+        border: 2px solid #fff;
+        border-radius: 50%;
+        padding: 1em;
+        color: #CDCDCD;
+      }
+
+      .mobile{
+        padding:1em 1.3em;
+      }
+
+      .service_icon:hover{
+        border: 2px solid #18BFF7;
+        -webkit-transform:scale(1.15); /* Safari and Chrome */
+        -moz-transform:scale(1.15); /* Firefox */
+        -ms-transform:scale(1.15); /* IE 9 */
+        -o-transform:scale(1.15); /* Opera */
+         transform:scale(1.15);
+      }
+
+    }
+  }/* END OF SERVICE */
+
+}/* END OF JUMBOTRON */
