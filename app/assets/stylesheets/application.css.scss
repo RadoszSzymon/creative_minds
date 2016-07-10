@@ -127,8 +127,10 @@
         padding:1em 1.3em;
       }
 
-      .service_icon:hover{
-        border: 2px solid #18BFF7;
+      .service_section:hover{
+        .service_icon{
+          border: 2px solid #18BFF7;
+        }
         -webkit-transform:scale(1.15); /* Safari and Chrome */
         -moz-transform:scale(1.15); /* Firefox */
         -ms-transform:scale(1.15); /* IE 9 */
@@ -138,5 +140,18 @@
 
     }
   }/* END OF SERVICE */
+
+  .portfolio{
+    h1{
+      font-size:3em;
+      padding: 1em 0;
+      font-weight: 700;
+    }
+
+    .first img, .second img, .third img{
+      height:300px;
+    }
+
+  }
 
 }/* END OF JUMBOTRON */
