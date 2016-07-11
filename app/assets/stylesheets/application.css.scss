@@ -176,7 +176,6 @@
   }/* END OF PORTFOLIO */
 
   .team{
-    padding-bottom: 4em;
     background-color: #fff;
 
     h1{
@@ -214,5 +213,124 @@
 
     }
   }/* END OF TEAM */
+
+  .blog{
+    background-color: #040D17;
+    color: #fff;
+    padding-bottom: 3em;
+
+    h1{
+      font-size:3em;
+      padding: 1em 0;
+      font-weight: 700;
+    }
+
+    .post{
+      padding-bottom: 0.4em;
+
+      h5{
+        color:#C0C0C0;
+      }
+
+      h2{
+        font-weight: 300;
+        font-size:2em;
+
+        a, a:hover{
+          text-decoration: none;
+        }
+
+        a{
+          color: #126C8A;
+          font-weight: 700;
+        }
+
+        a:hover{
+          color: #18BFF7;
+        }
+      }
+    }
+  }/* END OF BLOG */
+
+  .contact{
+    background-color: #fff;
+    padding-bottom: 5em;
+
+    h1{
+      font-size:3em;
+      padding: 1em 0;
+      font-weight: 700;
+    }
+    .col-md-8{
+      .form-area{
+        .btn-primary{
+          background-color: #fff;
+          color: #040D17;
+          border-color: #040D17;
+          font-size:1.5em;
+        }
+        .btn-primary:hover{
+          background-color: #040D17;
+          color: #fff;
+          border-color: #040D17;
+        }
+      }
+    }
+  }/* END OF CONTACT */
+
+  .follow{
+    background-color: #040D17;
+    color: #fff;
+    padding-bottom: 4em;
+
+    h1{
+      font-size:3em;
+      padding: 1em 0;
+      font-weight: 700;
+    }
+
+    .col-md-3{
+      .follow_icon{
+        font-size:6em;
+      }
+
+      .follow_icon:hover{
+        -moz-transform: scale(1.15);
+        -webkit-transform: scale(1.15);
+        transform: scale(1.15);
+        -moz-transition: all 1s;
+        -webkit-transition: all 1s;
+        transition: all 1s;
+      }
+    }
+  }/* END OF FOLLLOW US */
+
+  .footer{
+    background-color: #0E0E0E;
+    color:#fff;
+    display: flex;
+    justify-content: center; /* align horizontal */
+    align-items: center; /* align vertical */
+
+    .col-md-4{
+      padding: 2em 1em;
+
+      h2{
+        font-weight: 700;
+      }
+    }
+
+    .col-md-8{
+      h4{
+        display: inline;
+        font-weight: 700;
+      }
+
+      .dot{
+        padding: 0 1em;
+      }
+    }
+
+  }
 
 }/* END OF JUMBOTRON */
