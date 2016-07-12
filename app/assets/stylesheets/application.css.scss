@@ -28,6 +28,11 @@
   margin:0;
   width: 100%;
 
+  .banner, .about, .service, .portfolio, .team, .blog, .contact, .follow, .footer{
+    width:100%;
+    margin:0;
+  }
+
   /* BANNER */
 
   .banner{
@@ -83,6 +88,7 @@
     text-align: center;
     padding: 1em;
     color: #363636;
+    background-color: #fff;
 
     h1{
       font-size:3em;
@@ -142,6 +148,7 @@
   }/* END OF SERVICE */
 
   .portfolio{
+    background-color: #fff;
     h1{
       font-size:3em;
       padding: 1em 0;
@@ -164,9 +171,7 @@
       -moz-transition: all 1s;
       -webkit-transition: all 1s;
       transition: all 1s;
-    }
-
-    .first:hover img, .second:hover img, .third:hover img{
+    }a>d:hover img, .third:hover img{
       -moz-transform: scale(1.2);
       -webkit-transform: scale(1.2);
       transform: scale(1.2);
@@ -292,15 +297,16 @@
     .col-md-3{
       .follow_icon{
         font-size:6em;
+        -moz-transition: all 1s;
+        -webkit-transition: all 1s;
+        transition: all 1s;
       }
 
       .follow_icon:hover{
         -moz-transform: scale(1.15);
         -webkit-transform: scale(1.15);
         transform: scale(1.15);
-        -moz-transition: all 1s;
-        -webkit-transition: all 1s;
-        transition: all 1s;
+
       }
     }
   }/* END OF FOLLLOW US */
@@ -309,11 +315,11 @@
     background-color: #0E0E0E;
     color:#fff;
     display: flex;
-    justify-content: center; /* align horizontal */
-    align-items: center; /* align vertical */
+    justify-content: center;
+    align-items: center;
 
     .col-md-4{
-      padding: 2em 1em;
+      padding: 2em 0 2em 7em;
 
       h2{
         font-weight: 700;
@@ -326,11 +332,211 @@
         font-weight: 700;
       }
 
+      h4:hover{
+        color: #18BFF7;
+      }
+
       .dot{
         padding: 0 1em;
+        font-weight: 700;
+      }
+    }
+  }/* END OF FOOTER */
+
+  /* RESPONSIVE/MOBILE DESIGN */
+  /* 1100 PX */
+  @media screen and (max-width: 1100px) {
+    .banner{
+      .menu{
+        .menu_option{
+          h3{
+            font-size: 1em;
+          }
+        }
+      }
+    }
+    .footer{
+      .col-md-8{
+        h4{
+          font-size: 1em;
+        }
+      }
+    }
+  }/* END OF 1100PX */
+
+  @media screen and (max-width: 1000px) {
+    .footer{
+      .col-md-4{
+        padding: 1.3em 0;
+        h2{
+          font-size: 1.3em;
+        }
+        h4{
+          font-size:0.8em;
+        }
+      }
+    }
+    .service{
+      .service_options{
+        .service_section{
+          h3{
+            font-size: 1.2em;
+          }
+        }
+        .service_section:hover{
+          h3{
+            font-size: 1.4em;
+          }
+        }
+      }
+    }
+  }/* END OF 1000PX */
+
+  @media screen and (max-width: 900px) {
+    .banner{
+      h1{
+        font-size: 3.5em;
+      }
+    }
+    .service{
+      .service_options{
+        .service_section{
+          h3{
+            font-size: 1.15em;
+          }
+        }
+        .service_section:hover{
+          h3{
+            font-size: 1.25em;
+          }
+        }
+      }
+    }
+  }/* END OF 900PX */
+
+  @media screen and (max-width: 800px) {
+    .banner{
+      padding-bottom: 1em;
+      .menu_option{
+        margin-bottom: 2em;
       }
     }
 
-  }
+    .service{
+      .service_options{
+        .service_section{
+          h3{
+            font-size: 1.1em;
+          }
+        }
+        .service_section:hover{
+          h3{
+            font-size: 1.2em;
+          }
+        }
+      }
+    }
+
+    .portfolio{
+      .images{
+        .first img, .second img, .third img{
+          height: 250px;
+        }
+      }
+    }
+
+    .team{
+      .images{
+        .first img, .second img, .third img{
+          height: 250px;
+        }
+      }
+
+      .follow{
+        padding: 0 1em;
+      }
+    }
+  }/* END OF 800PX */
+
+  @media screen and (max-width: 800px) {
+    .banner{
+      padding-bottom: 1em;
+      .menu_option{
+        margin-bottom: 2em;
+      }
+    }
+
+    .service{
+      height: 100%;
+
+      .service_options{
+        .service_section{
+          padding-bottom:1em;
+
+          h3{
+            font-size: 1.1em;
+          }
+        }
+        .service_section:hover{
+          h3{
+            font-size: 1.2em;
+          }
+        }
+      }
+    }
+
+    .portfolio{
+      .images{
+        .first img, .second img, .third img{
+          height: 250px;
+        }
+      }
+    }
+
+    .team{
+      .images{
+        .first img, .second img, .third img{
+          height: 250px;
+        }
+      }
+
+      .follow{
+        padding: 0 1em;
+      }
+    }
+  }/* END OF 800PX */
+
+  @media screen and (max-width: 700px) {
+    .banner{
+      h1{
+        font-size: 2.4em;
+      }
+    }
+
+    .portfolio{
+      .images{
+        .first img, .second img, .third img{
+          height: 230px;
+        }
+      }
+    }
+
+    .team{
+      .images{
+        .first img, .second img, .third img{
+          height: 230px;
+        }
+      }
+    }
+
+  }/* END OF 700PX */
+
+  @media screen and (max-width: 600px) {
+    .follow{
+      .follow_icon i{
+        padding-bottom: 0.8em;
+      }
+    }
+  }/* END OF 600PX */
 
 }/* END OF JUMBOTRON */
