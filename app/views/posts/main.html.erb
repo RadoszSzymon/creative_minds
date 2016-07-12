@@ -110,7 +110,7 @@
     <% @post.each do |post| %>
       <div class="post">
          <h2><%= link_to post.title, post %></h2>
-         <h5>Submitted <%= time_ago_in_words(post.created_at) %></h5>
+         <h5>Added <%= post.created_at.strftime("%d %B %Y") %></h5>
       </div>
     <% end %>
   <% end %>
