@@ -171,7 +171,9 @@
       -moz-transition: all 1s;
       -webkit-transition: all 1s;
       transition: all 1s;
-    }a>d:hover img, .third:hover img{
+    }
+
+    .first:hover img, .second:hover img, .third:hover img{
       -moz-transform: scale(1.2);
       -webkit-transform: scale(1.2);
       transform: scale(1.2);
@@ -412,6 +414,12 @@
         }
       }
     }
+
+    .follow{
+      .follow_box i{
+        padding-bottom:0.3em;
+      }
+    }
   }/* END OF 900PX */
 
   @media screen and (max-width: 800px) {
@@ -453,7 +461,9 @@
       }
 
       .follow{
-        padding: 0 1em;
+        .follow_box i{
+          padding-bottom:0.3em;
+        }
       }
     }
   }/* END OF 800PX */
@@ -501,7 +511,9 @@
       }
 
       .follow{
-        padding: 0 1em;
+        .follow_box i{
+          padding-bottom:0.3em;
+        }
       }
     }
   }/* END OF 800PX */
@@ -529,6 +541,11 @@
       }
     }
 
+    .follow{
+      .follow_box i{
+        padding-bottom:0.3em;
+      }
+    }
   }/* END OF 700PX */
 
   @media screen and (max-width: 600px) {
@@ -537,6 +554,36 @@
         padding-bottom: 0.8em;
       }
     }
+
+    .portfolio{
+      .images{
+        .first, .second, .third{
+          width:100%;
+        }
+      }
+    }
   }/* END OF 600PX */
+
+  @media screen and (max-width: 500px) {
+    .team{
+      .images{
+        .first, .second, .third{
+          width:100%;
+        }
+      }
+    }
+  }/* END OF 500PX */
+
+  @media screen and (max-width: 400px) {
+    .banner{
+      .menu{
+        .col-xs-4{
+          .menu_option{
+            width: 100%;
+          }
+        }
+      }
+    }
+  }/* END OF 400PX */
 
 }/* END OF JUMBOTRON */
