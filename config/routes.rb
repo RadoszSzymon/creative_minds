@@ -1,6 +1,9 @@
 Rails.application.routes.draw do
+  get 'static/main'
+
   devise_for :users, controllers: { registrations: "registrations"}
 
   resources :posts
-  root "posts#main"
+  resources :static
+  root "static#main"
 end
