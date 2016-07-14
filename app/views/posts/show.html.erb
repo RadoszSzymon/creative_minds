@@ -1,16 +1,22 @@
-<h1>
-  <%= @post.title %>
-</h1>
+<div class="row blog_post">
+  <div class="col-md-8 col-md-offset-2">
+    <h1>
+      <%= @post.title %>
+    </h1>
 
-<p>
-  Added <%= time_ago_in_words(@post.created_at) %> ago
-</p>
+    <h4>
+      Added <%= time_ago_in_words(@post.created_at) %> ago
+    </h4>
 
-<p>
-  <%= @post.body %>
-</p>
+    <p>
+      <%= @post.body %>
+    </p>
 
-<% if user_signed_in? %>
-  <%= link_to "edit", edit_post_path(@post) %> |
-  <%= link_to "delete", post_path(@post), method: :delete, data: { confirm: "Are you sure?" } %>
-<% end %>
+    <% if user_signed_in? %>
+      <%= link_to "edit", edit_post_path(@post) %> |
+      <%= link_to "delete", post_path(@post), method: :delete, data: { confirm: "Are you sure?" } %>
+    <% end %>
+
+    <%= link_to "Go back all posts", posts_path, class:"btn btn-default back_button" %>
+  </div>
+</div>

@@ -33,6 +33,10 @@
     margin:0;
   }
 
+  a, a:hover{
+    text-decoration: none;
+  }
+
   /* BANNER */
 
   .banner{
@@ -43,6 +47,10 @@
 
     .menu{
       padding: 0 4em;
+    }
+
+    a{
+      color: #fff;
     }
 
     .menu_option{
@@ -62,6 +70,10 @@
 
     .menu_option:hover{
       background-color:#102C4A;
+
+      a{
+        color: #CDCDCD;
+      }
 
       .icon{
         -webkit-transform:scale(1.15); /* Safari and Chrome */
@@ -224,7 +236,7 @@
   .blog{
     background-color: #040D17;
     color: #fff;
-    padding-bottom: 3em;
+    padding-bottom: 4em;
 
     h1{
       font-size:3em;
@@ -232,21 +244,15 @@
       font-weight: 700;
     }
 
+    a, a:hover{
+      text-decoration: none;
+    }
+
     .post{
       padding-bottom: 0.4em;
 
       h5{
         color:#C0C0C0;
-      }
-
-      h2{
-        font-weight: 300;
-        font-size:2em;
-
-        a, a:hover{
-          text-decoration: none;
-        }
-
         a{
           color: #126C8A;
           font-weight: 700;
@@ -262,6 +268,10 @@
   .contact{
     background-color: #fff;
     padding-bottom: 5em;
+
+    textarea {
+      resize: none;
+    }
 
     h1{
       font-size:3em;
@@ -297,6 +307,13 @@
     }
 
     .col-md-3{
+      a{
+        color: #fff;
+      }
+
+      a:hover{
+        color:#126C8A;
+      }
       .follow_icon{
         font-size:6em;
         -moz-transition: all 1s;
@@ -335,7 +352,7 @@
       }
 
       h4:hover{
-        color: #18BFF7;
+        color: #126C8A;
       }
 
       .dot{
@@ -344,6 +361,65 @@
       }
     }
   }/* END OF FOOTER */
+
+  .blog_post{
+    background-color: #fff;
+
+    p{
+      text-align: justify;
+    }
+
+    h4{
+      padding:1em 0;
+      font-weight: 300;
+    }
+
+    .back_button{
+      background-color: #fff;
+      color: #040D17;
+      border:3px solid #040D17;
+      font-size:1.5em;
+      margin-top: 2em;
+    }
+    .back_button:hover{
+      background-color: #040D17;
+      color: #fff;
+      border:3px solid #040D17;
+    }
+  }/* END OF BLOG_POST */
+
+  .blog_index{
+    background-color: #fff;
+
+    h1{
+      padding-bottom: 0.5em;
+    }
+
+    .back_button{
+      background-color: #fff;
+      color: #040D17;
+      border:3px solid #040D17;
+      font-size:1.5em;
+      margin-top: 0.3em;
+      margin-bottom: 2.3em;
+    }
+    .back_button:hover{
+      background-color: #040D17;
+      color: #fff;
+      border:3px solid #040D17;
+    }
+
+    .post{
+      h2{
+        font-size:2em;
+        font-weight: 700;
+        margin-top:0;
+      }
+      h4{
+        padding:0.6em 0;
+      }
+    }
+  }/* END OF BLOG_INDEX */
 
   /* RESPONSIVE/MOBILE DESIGN */
   /* 1100 PX */

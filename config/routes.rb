@@ -5,5 +5,7 @@ Rails.application.routes.draw do
 
   resources :posts
   resources :static
+  resources :contacts, only: [:new, :create]
+
   root "static#main"
 end

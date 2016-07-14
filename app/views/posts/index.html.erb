@@ -1,16 +1,23 @@
-<h1>index</h1>
+<div class="row blog_index">
+  <div class="col-md-8 col-md-offset-2">
+    <h1>Blog posts</h1>
 
-<% if @post.any? %>
-  <% @post.each do |post| %>
-    <div class="post">
-       <h2><%= link_to post.title, post %></h2>
-       <h5>Added <%= post.created_at.strftime("%d %B %Y") %></h5>
-    </div>
-  <% end %>
-<% end %>
+    <% if @post.any? %>
+      <% @post.each do |post| %>
+        <div class="post">
+           <h2><%= link_to post.title, post %></h2>
+           <h5>Added <%= post.created_at.strftime("%d %B %Y") %></h5>
+           <h4><%= post.body[0,50] %> ...</h3>
+           <%= link_to "Read full post", post, class:"btn btn-default back_button" %>
+        </div>
+      <% end %>
+    <% end %>
 
-<% if user_signed_in? %>
-   <%= link_to 'logout', destroy_user_session_path, :method => :delete %>
-<% else %>
-  <%= link_to 'login', new_user_session_path %>
-<% end %>
+    <% if user_signed_in? %>
+       <%= link_to 'logout', destroy_user_session_path, :method => :delete %>
+    <% else %>
+      <%= link_to 'login', new_user_session_path, class:"btn btn-default back_button" %>
+    <% end %>
+    <%= link_to "Go back to website", root_path, class:"btn btn-default back_button" %>
+  </div>
+</div>
