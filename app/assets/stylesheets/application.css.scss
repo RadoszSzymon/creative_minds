@@ -171,13 +171,13 @@
       max-width: 100%;
     }
 
-    .first, .second, .third{
+    .first_project, .second_project, .third_project{
       padding:0;
       position: relative;
       overflow: hidden;
     }
 
-    .first img, .second img, .third img{
+    .first_project img, .second_project img, .third_project img{
       height:300px;
       width:100%;
       -moz-transition: all 1s;
@@ -185,13 +185,11 @@
       transition: all 1s;
     }
 
-    .first:hover img, .second:hover img, .third:hover img{
+    .first_project:hover img, .second_project:hover img, .third_project:hover img{
       -moz-transform: scale(1.2);
       -webkit-transform: scale(1.2);
       transform: scale(1.2);
     }
-
-
   }/* END OF PORTFOLIO */
 
   .team{
@@ -203,12 +201,8 @@
       font-weight: 700;
     }
 
-    .col-md-4 img{
-      width: 100%;
-    }
-
-    .col-md-4 img:hover{
-      width: 100%;
+    .images{
+      max-width: 100%;
     }
 
     .first, .second, .third{
@@ -229,7 +223,6 @@
       -moz-transform: scale(1.2);
       -webkit-transform: scale(1.2);
       transform: scale(1.2);
-
     }
   }/* END OF TEAM */
 
