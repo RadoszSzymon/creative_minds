@@ -170,6 +170,15 @@
     .images{
       max-width: 100%;
       
+      .button-1, .button-2, .button-3{
+        background-color: #040D17;
+        border: none;
+        color: #fff;
+        border-radius: 20px;
+      }
+      .button-1:hover, .button-2:hover, .button-3:hover{
+        background-color: #081A2E;
+      }
       .first_project{
         background-image: image-url("1.jpg");
         height: 300px;
@@ -187,7 +196,7 @@
       }
       
       .first_project:hover{
-        color: #000;
+        color: #040D17;
         background-image: image-url("1_op.jpg");
         
         .project-1, .button-1{
@@ -216,7 +225,7 @@
       }
       
       .second_project:hover{
-        color: #000;
+        color: #040D17;
         background-image: image-url("2_op.jpg");
         
         .project-2, .button-2{
@@ -245,7 +254,7 @@
       }
       
       .third_project:hover{
-        color: #000;
+        color: #040D17;
         background-image: image-url("3_op.jpg");
         
         .project-3, .button-3{
@@ -726,6 +735,21 @@
 
     .portfolio{
       .images{
+        .first_project:hover{
+          .project-1, .button-1{
+            display:none;
+          }
+        }
+        .second_project:hover{
+          .project-2, .button-2{
+            display:none;
+          }
+        }
+        .third_project:hover{
+          .project-3, .button-3{
+            display:none;
+          }
+        }
         .first img, .second img, .third img{
           height: 230px;
         }
