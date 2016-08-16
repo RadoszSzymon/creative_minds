@@ -169,27 +169,96 @@
 
     .images{
       max-width: 100%;
+      
+      .first_project{
+        background-image: image-url("1.jpg");
+        height: 300px;
+        padding: 2em 2em 0 2em;
+        -webkit-transition: all 1000ms ease;
+        -moz-transition: all 1000ms ease;
+        -ms-transition: all 1000ms ease;
+        -o-transition: all 1000ms ease;
+        transition: all 1000ms ease;
+         background-size: cover;
+        
+        .project-1, .button-1{
+          display:none;
+        }
+      }
+      
+      .first_project:hover{
+        color: #000;
+        background-image: image-url("1_op.jpg");
+        
+        .project-1, .button-1{
+          display: block;
+        }
+        
+        .project-1{
+          font-weight: 700;
+        }
+      }
+      
+      .second_project{
+        background-image: image-url("2.jpg");
+        height: 300px;
+        padding: 2em 2em 0 2em;
+        -webkit-transition: all 700ms ease;
+        -moz-transition: all 700ms ease;
+        -ms-transition: all 700ms ease;
+        -o-transition: all 700ms ease;
+        transition: all 700ms ease;
+         background-size: cover;
+        
+        .project-2, .button-2{
+          display:none;
+        }
+      }
+      
+      .second_project:hover{
+        color: #000;
+        background-image: image-url("2_op.jpg");
+        
+        .project-2, .button-2{
+          display: block;
+        }
+        
+        .project-2{
+          font-weight: 700;
+        }
+      }
+      
+      .third_project{
+        background-image: image-url("3.jpg");
+        height: 300px;
+        padding: 2em 2em 0 2em;
+        -webkit-transition: all 1000ms ease;
+        -moz-transition: all 1000ms ease;
+        -ms-transition: all 1000ms ease;
+        -o-transition: all 1000ms ease;
+        transition: all 1000ms ease;
+         background-size: cover;
+        
+        .project-3, .button-3{
+          display:none;
+        }
+      }
+      
+      .third_project:hover{
+        color: #000;
+        background-image: image-url("3_op.jpg");
+        
+        .project-3, .button-3{
+          display: block;
+        }
+        
+        .project-3{
+          font-weight: 700;
+        }
+      }
+      
     }
 
-    .first_project, .second_project, .third_project{
-      padding:0;
-      position: relative;
-      overflow: hidden;
-    }
-
-    .first_project img, .second_project img, .third_project img{
-      height:300px;
-      width:100%;
-      -moz-transition: all 1s;
-      -webkit-transition: all 1s;
-      transition: all 1s;
-    }
-
-    .first_project:hover img, .second_project:hover img, .third_project:hover img{
-      -moz-transform: scale(1.2);
-      -webkit-transform: scale(1.2);
-      transform: scale(1.2);
-    }
   }/* END OF PORTFOLIO */
 
   .team{
@@ -203,27 +272,85 @@
 
     .images{
       max-width: 100%;
+      
+      .first{
+        background-image: image-url("face.jpg");
+        height: 300px;
+        padding: 8em 2em 0 2em;
+        -webkit-transition: all 1000ms ease;
+        -moz-transition: all 1000ms ease;
+        -ms-transition: all 1000ms ease;
+        -o-transition: all 1000ms ease;
+        transition: all 1000ms ease;
+        background-size: cover;
+        
+        .person-1{
+          display:none;
+        }
+      }
+      
+      .first:hover{
+        color: #000;
+        background-image: image-url("face_op.jpg");
+        
+        .person-1{
+          display: block;
+          font-weight: 700;
+        }
+      }
+      
+      .second{
+        background-image: image-url("face.jpg");
+        height: 300px;
+        padding: 8em 2em 0 2em;
+        -webkit-transition: all 1000ms ease;
+        -moz-transition: all 1000ms ease;
+        -ms-transition: all 1000ms ease;
+        -o-transition: all 1000ms ease;
+        transition: all 1000ms ease;
+        background-size: cover;
+        
+        .person-2{
+          display:none;
+        }
+      }
+      
+      .second:hover{
+        color: #000;
+        background-image: image-url("face_op.jpg");
+        
+        .person-2{
+          display: block;
+          font-weight: 700;
+        }
+      }
     }
-
-    .first, .second, .third, .first_project, .second_project, .third_project{
-      padding:0;
-      position: relative;
-      overflow: hidden;
-    }
-
-    .first img, .second img, .third img, .first_project img, .second_project img, .third_project img{
-      height:300px;
-      width:100%;
-      -moz-transition: all 1s;
-      -webkit-transition: all 1s;
-      transition: all 1s;
-    }
-
-    .first:hover img, .second:hover img, .third:hover img{
-      -moz-transform: scale(1.2);
-      -webkit-transform: scale(1.2);
-      transform: scale(1.2);
-    }
+    
+    .third{
+        background-image: image-url("face.jpg");
+        height: 300px;
+        padding: 8em 2em 0 2em;
+        -webkit-transition: all 1000ms ease;
+        -moz-transition: all 1000ms ease;
+        -ms-transition: all 1000ms ease;
+        -o-transition: all 1000ms ease;
+        transition: all 1000ms ease;
+        background-size: cover;
+        
+        .person-3{
+          display:none;
+        }
+      }
+      
+      .third:hover{
+        color: #000;
+        background-image: image-url("face_op.jpg");
+        
+        .person-3{
+          display: block;
+          font-weight: 700;
+        }
+      }
   }/* END OF TEAM */
 
   .blog{
@@ -566,6 +693,9 @@
 
     .portfolio{
       .images{
+        .first_project{
+          background-image: image-url("1.jpg");
+        }
         .first img, .second img, .third img{
           height: 250px;
         }
