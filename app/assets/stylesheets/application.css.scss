@@ -490,6 +490,26 @@
       }
     }
   }/* END OF FOOTER */
+  
+  .new_post{
+    background-color: #fff;
+    
+    h1{
+      padding: 0.7em 0 1.2em 0;
+    }
+    
+    input, textarea{
+      width:100%;
+    }
+    textarea{
+      height: 5em;
+      resize: none;
+    }
+    
+    .submit{
+      width:50%;
+    }
+  }/* END OF NEW POST */
 
   .blog_post{
     background-color: #fff;
