@@ -539,9 +539,17 @@
 
   .blog_index{
     background-color: #fff;
+    
+    .line{
+      border-top: 1px solid #696969;
+      width:20%;
+      margin: 1.3em 0;
+      margin-left:40%;
+      margin-right:40%;
+    }
 
     h1{
-      padding-bottom: 0.5em;
+      padding-bottom: 0.7em;
     }
 
     .back_button{
@@ -559,13 +567,14 @@
     }
 
     .post{
+      margin-bottom: 4em;
       h2{
         font-size:2em;
         font-weight: 700;
         margin-top:0;
       }
       h4{
-        padding:0.6em 0;
+        padding:1.4em 0 ;
       }
     }
   }/* END OF BLOG_INDEX */
